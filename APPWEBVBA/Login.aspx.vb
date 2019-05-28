@@ -26,4 +26,7 @@ Partial Class Login
     Protected Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Response.Redirect("Start.aspx")
     End Sub
+    Protected Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Response.Redirect("Courses.aspx")
+    End Sub
 End Class

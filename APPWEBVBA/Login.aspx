@@ -40,6 +40,9 @@
             <asp:Button ID="Button3" runat="server" BackColor="#99CCFF" Text="Return to Start" Width="144px" />
             <br />
             <br />
+            <asp:Button ID="Button4" runat="server" BackColor="#FF9966" Text="VIEW COURSES" Width="144px" />
+            <br />
+            <br />
         </div>
         </center>
     </form>
