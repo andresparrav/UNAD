@@ -69,7 +69,6 @@
             <br />
         </div>
         </center>
-        <asp:Button ID="Button4" runat="server" Height="33px" Text="Test Database" Width="116px" />
     </form>
 </body>
 </html>

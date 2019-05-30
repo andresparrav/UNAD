@@ -31,13 +31,6 @@ Partial Class DataBase
         Dim command As New SqlCommand(query, connection)
         command.ExecuteNonQuery()
     End Sub
-    Protected Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        Dim connection As New SqlConnection("Data Source=tcp:appwebvba20190528121732dbserver.database.windows.net,1433; Initial Catalog=APPWEBVBA20190528011002_db; Persist Security Info=False; User ID=andres; Password=Passw0rd; MultipleActiveResultSets=False; Encrypt=True; TrustServerCertificate=False; Connection Timeout=30;")
-        connection.Open()
-        MsgBox("Successfully Connected!")
-        connection.Close()
-        MsgBox("Successfully Finished!")
-    End Sub
 End Class
 
 ';User ID={your_username};Password={your_password};
