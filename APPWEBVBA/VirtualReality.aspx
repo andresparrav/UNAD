@@ -18,10 +18,10 @@
         }
     </style>
 </head>
-<body style="height: 896px">
+<body style="height: 1079px">
     <form id="form1" runat="server">
         <Center>
-            <div style="height: 903px">                
+            <div style="height: 1083px">                
             <br />
             <asp:Label ID="Label1" runat="server" Text="UNIVERSIDAD NACIONAL ABIERTA Y A DISTANCIA"></asp:Label>
             <br />
@@ -44,6 +44,11 @@
                 <br />
                 <br />
             <asp:ImageButton ID="ImageButton2" runat="server" Height="60px" Width="59px" ImageUrl="~/Images/arrowRight.png" />
+                <br />
+                <asp:Label ID="Label5" runat="server" Text="START TEST"></asp:Label>
+                <br />
+                <br />
+            <asp:Button ID="Button3" runat="server" BackColor="#99CCFF" Text="Return to Start" Width="144px" />
                 <br />
             </div>
         </Center>
