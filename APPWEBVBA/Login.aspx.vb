@@ -2,7 +2,7 @@
 
 Partial Class Login
     Inherits System.Web.UI.Page
-    Dim conection As New SqlConnection("Data Source=localhost;Initial Catalog=UNADVBA;integrated security=true")
+    Dim conection As New SqlConnection("Data Source=tcp:appwebvba20190528121732dbserver.database.windows.net,1433; Initial Catalog=APPWEBVBA20190528011002_db; Persist Security Info=False; User ID=andres; Password=Passw0rd; MultipleActiveResultSets=False; Encrypt=True; TrustServerCertificate=False; Connection Timeout=30;")
 
     Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         conection.Open()
@@ -28,5 +28,11 @@ Partial Class Login
     End Sub
     Protected Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         Response.Redirect("Courses.aspx")
+    End Sub
+    Protected Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        conection.Open()
+        MsgBox("Successfully Connected!")
+        conection.Close()
+        MsgBox("Successfully Finished!")
     End Sub
 End Class
